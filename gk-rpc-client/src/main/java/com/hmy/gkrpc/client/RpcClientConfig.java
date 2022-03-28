@@ -24,15 +24,4 @@ public class RpcClientConfig {
     private int connectCount = 1;
     private List<Peer> servers = Arrays.asList(new Peer("127.0.0.1", 3000));
 
-    public int helper(String s, int lo, int hi) {
-        int cnt = 0;
-        int n = s.length();
-        s.substring()
-        while (lo >= 0 && hi < n && s.charAt(lo) == s.charAt(hi)) {
-            cnt += 1;
-            lo -= 1;
-            hi += 1;
-        }
-        return cnt;
-    }
 }

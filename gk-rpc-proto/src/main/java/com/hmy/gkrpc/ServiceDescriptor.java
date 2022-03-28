@@ -24,7 +24,6 @@ public class ServiceDescriptor {
     private String[] parameterTypes;
 
     public static <T> ServiceDescriptor from(Class clazz, Method method) {
-        ReentrantLock
         ServiceDescriptor sdp = new ServiceDescriptor();
         sdp.setClazz(clazz.getName());
         sdp.setMethod(method.getName());
