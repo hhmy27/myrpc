@@ -3,6 +3,7 @@ package com.hmy.gkrpc.server;
 import com.hmy.gkrpc.Request;
 import com.hmy.gkrpc.ServiceDescriptor;
 import com.hmy.gkrpc.common.utils.ReflectionUtils;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.Method;
@@ -11,6 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * @Description 管理所有服务
  */
+@Data
 @Slf4j
 public class ServiceManager {
     private final ConcurrentHashMap<ServiceDescriptor, ServiceInstance> services;
